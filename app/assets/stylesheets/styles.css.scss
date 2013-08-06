@@ -1,0 +1,277 @@
+
+/*You can use this to import fonts */
+/*
+$baseFontFamily: poiret+one;
+@import url(http://fonts.googleapis.com/css?family=Poiret+One); */
+
+$btninfoBackground: green;
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.brand_david {
+	color: #ffffff;
+	display: block;
+	float: left;
+	padding: 10px 20px 10px;
+	margin-left: -20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.brand_david:hover {
+	text-decoration:none;
+	color: red;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.clear {
+	clear: both;
+}
+
+.form-horizontal .david_form_actions {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.david_header {
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+	background-color: #D6EBFF;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 10px;
+	border: solid 4px #BBD2E3;
+}
+
+.david_blue {
+  color: #00248F;
+}
+
+.david_caption {
+	font-size: 1.25em;
+}
+
+.david_left {
+	float: left;
+	width: 650px;
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+}
+
+.david_right {
+	width: 400px;
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+}
+
+.david_unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #B5D0E1;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.david_unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.david_unit li {
+  line-height: 30px;
+}
+
+.david_unit_bg {
+	border-radius: 10px;
+	height: 70px;
+	opacity: 0.9;
+	/*background-color: #AECBDE; /* default #eeeeee */
+	background-image: url("/images/bigbangbluetaeyang.jpg"); /*added bg image*/
+	background-repeat: no-repeat; /*add bg style*/
+	background-size:cover; /*add bg style to cover image size*/
+	background-position: 80% 15%;
+}
+
+.error_box {
+	padding: 5px 5px 5px 5px;
+	border-radius: 10px;
+	margin: 5px;
+	background-color: #FCD8D8;
+	color: #E60000;
+	border: solid 4px #E83933;
+}
+
+.form_blue {
+	background-color: #D6EBFF;
+	padding: 15px;
+	border-radius: 20px;
+	border: solid 4px #257AB7;
+}
+
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+.about_img {
+    margin: 10px auto 10px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
+
+.h_nice {
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+	margin: 10px auto;
+}
+
+.h_yellow {
+	color: yellow;
+	margin: 2px;
+}
+
+.navbar .nav > li > a {
+	color: #257AB7;	
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: red;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.submit_button {
+  border-radius: 10px;
+  color: #E4E4E4;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  background: linear-gradient(#549ad0, #A9CCD4);
+  background-size: 100% 200%;
+  transition: background-position .5s linear;
+}
+
+.submit_button:hover, .button:focus {
+  background-position: 0 -102%;
+  color: yellow;
+}
+
+.submit_button_purple {
+  border-radius: 10px;
+  color: #E4E4E4;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  background: linear-gradient(#3333CC, #A9CCD4);
+  background-size: 100% 200%;
+  transition: background-position .5s linear;
+}
+
+.submit_button_purple:hover, .button:focus {
+  background-position: 0 -102%;
+  color: yellow;
+}
+
+.submit_button_red {
+  border-radius: 10px;
+  color: #E4E4E4;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  background: linear-gradient(#FF0000, #ffffff);
+  background-size: 100% 200%;
+  transition: background-position .5s linear;
+}
+
+.submit_button_red:hover, .button:focus {
+  background-position: 0 -102%;
+  color: yellow;
+}
+
+/* Required for jQuery Masonry */
+
+.box {
+	background: linear-gradient(#ffffff, #E2F1FF);
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4em;
+	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #444;
+	width: 214px;
+
+}
+
+.box img {
+	display: block;
+	width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+
+.description {
+	margin: 10px 0 5px;
+}
+
+/*added this for carousel fade*/
+
+.carouselImg img{
+  width: auto;
+  height: 450px;
+  max-height: 450px;
+}
+
+.carousel.carousel-fade .item {
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+  left: 0;
+  z-index: 1;
+}
+
+.carousel.carousel-fade .carousel-control {
+  z-index: 3;
+}

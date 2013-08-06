@@ -1,0 +1,26 @@
+<div class="david_header">
+<h2 class="h_nice">Edit <%= resource_name.to_s.humanize %></h2>
+</div>
+<div class="form_blue">
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
+  <%= f.error_notification %>
+  
+  <%= f.input :user_name %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :email %>
+  <%= f.input :password, label: "New Password", autocomplete: "off" %>
+  <%= f.input :password_confirmation, label: "New Password Confirmation", autocomplete: "off" %>
+  <%= f.input :current_password %>
+
+  <div class="form-actions" style="background-color: #C1D4E6; border-radius: 10px;">
+    <%= f.submit "Update", class: "btn btn-large submit_button"%>
+  </div>
+<% end %>
+</div>
+
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %>.</p>
+
+<%= link_to "Back", :back %>
