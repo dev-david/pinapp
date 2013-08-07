@@ -9,6 +9,7 @@ gem 'hirb'
 gem 'newrelic_rpm'
 gem "flat-ui-rails"
 gem 'aws-sdk'
+gem 'hirb'
 
 group :production do
 	gem 'pg'
