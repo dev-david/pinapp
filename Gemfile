@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'hirb'
+gem 'newrelic_rpm'
 
 group :production do
 	gem 'pg'
