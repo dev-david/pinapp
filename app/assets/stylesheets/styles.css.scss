@@ -9,6 +9,11 @@ $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 
 @import 'bootstrap';
+@import 'flat-ui';
+
+a {
+	text-decoration: none;
+}
 
 body {
 	padding-top: 60px;
@@ -85,7 +90,7 @@ body {
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: #B5D0E1;
+  background-color: #2980b9;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -115,11 +120,11 @@ body {
 
 .error_box {
 	padding: 5px 5px 5px 5px;
-	border-radius: 3px;
+	border-radius: 1px;
 	margin: 5px;
 	background-color: #FCD8D8;
 	color: #E60000;
-	border: solid 4px #E83933;
+	border: solid 2px #E83933;
 }
 
 .form_blue {
@@ -171,45 +176,7 @@ body {
 }
 
 .submit_button {
-  border-radius: 3px;
-  color: #E4E4E4;
-  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-  background: linear-gradient(#549ad0, #A9CCD4);
-  background-size: 100% 200%;
-  transition: background-position .5s linear;
-}
-
-.submit_button:hover, .button:focus {
-  /*background-position: 0 -102%;*/
-  color: yellow;
-}
-
-.submit_button_purple {
-  border-radius: 3px;
-  color: #E4E4E4;
-  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-  background: linear-gradient(#3333CC, #A9CCD4);
-  background-size: 100% 200%;
-  transition: background-position .5s linear;
-}
-
-.submit_button_purple:hover, .button:focus {
-  /*background-position: 0 -102%;*/
-  color: yellow;
-}
-
-.submit_button_red {
-  border-radius: 3px;
-  color: #E4E4E4;
-  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-  background: linear-gradient(#FF0000, #ffffff);
-  background-size: 100% 200%;
-  transition: background-position .5s linear;
-}
-
-.submit_button_red:hover, .button:focus {
-  /*background-position: 0 -102%;*/
-  color: yellow;
+	border-radius: 2px;
 }
 
 /* Required for jQuery Masonry */
@@ -223,7 +190,7 @@ body {
 	float: left;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border-radius: 2px;
 	box-shadow: 1px 1px 10px #444;
 	width: 214px;
 
@@ -234,7 +201,7 @@ body {
 	width: 100%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border-radius: 1px;
 
 }
 

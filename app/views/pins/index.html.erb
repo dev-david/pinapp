@@ -1,9 +1,7 @@
 <%= render 'pages/home' %>
 
 <% if user_signed_in? %>
-<div class="david_unit_bg">
-	<h3 class="h_nice" style="margin:0px auto;text-align:center;">M a i n</h3>
-</div>
+<div class="center"><h1>M a i n</h1></div>
 <div id="pins">
   <%= render @pins %>
 </div>
