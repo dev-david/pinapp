@@ -1,0 +1,7 @@
+<h1>Pinned by: <%= @user.user_name %></h1>
+
+<div id="pins">
+  <%= render @pins %>
+</div>
+
+<%= will_paginate @pins %>

@@ -1,10 +1,13 @@
 Pinapp::Application.routes.draw do
+  get "users/show"
+
   resources :pins
 
 
   devise_for :users
 
   get 'about' => 'pages#about'
+  match 'users/:id' => 'users#show', as: :user
 
 
   root :to => 'pins#index'

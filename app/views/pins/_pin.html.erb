@@ -4,9 +4,9 @@
       	<%= pin.description %>
       </p>
       <p>
-      	<strong>
-      		Posted by <%= pin.user.user_name %>
-      	</strong>
+            <strong>
+                  Posted by <%= link_to pin.user.user_name, pin.user %>
+            </strong>
       </p>
       <% if current_user == pin.user%>
             <p>
