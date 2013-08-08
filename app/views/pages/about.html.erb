@@ -1,9 +1,22 @@
 <div class="span5">
-	<img class="about_img" src="images/bomyouandi.jpg" alt="bom park"/>
+	<div class="center">
+		<img class="about_img" src="images/bomyouandi.jpg" alt="bom park"/>
+		<div class="david_unit">
+			<h1>About Us</h1>
+			<p>	Pin Ninja is a site where people can come together to share pictures or 'pins'. <br>
+				Pin for me, pin for you. Pins for me, pins for you.</p>
+			<small>*This is a sample site for entertainment purposes only.<br>
+			<%= link_to "Pin Ninja", root_path %>
+			by <%= link_to "Dev David", "http://www.devdavid.com" %></small>
+		</div>
+	</div>
+</div>
+<div class="span6">
+	<div class="center">
 	<div class="david_unit">
-	<h1>About Us</h1>
-	<p>	Pin Ninja is a site where people can come together to share pictures or 'pins'. <br>
-		Pin for me, pin for you. Pins for me, pins for you.</p>
+		<h1>Preview</h1>
+	</div>
+	<%= link_to image_tag("/images/pinninjadash.jpg"), "/images/pinninjadash.jpg" %>
 	</div>
 </div>
 <div class="clear"></div>
