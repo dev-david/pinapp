@@ -5,11 +5,7 @@
       </p>
       <p>
       	<strong>
-                  <% if pin.user.user_name %>
       		Posted by <%= pin.user.user_name %>
-                  <% else %>
-                  Posted by <%= pin.user.name %> <%= pin.user.first_name %> <%= pin.user.last_name %>
-                  <% end %>
       	</strong>
       </p>
       <% if current_user == pin.user%>
