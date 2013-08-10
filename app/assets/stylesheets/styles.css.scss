@@ -22,12 +22,18 @@ body {
 
 @import 'bootstrap-responsive';
 
+.about_img {
+    margin-bottom: 10px;
+    width: 500px;
+    border-radius: 3px;
+}
+
 .brand_david {
 	color: #ffffff;
 	display: block;
 	float: left;
-	padding: 10px 20px 10px;
-	margin-left: -20px;
+	padding: 11px 20px 10px;
+	margin: 0px auto;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -151,12 +157,6 @@ body {
 .navbar-inner {
 	@include box-shadow(none !important);
 	border: 0;
-}
-
-.about_img {
-    margin-bottom: 10px;
-    width: 500px;
-    border-radius: 3px;
 }
 
 .footer {
