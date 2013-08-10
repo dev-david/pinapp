@@ -1,5 +1,5 @@
-<p>Welcome to PinNinja.net <%= @resource.first_name %> <%=  @resource.last_name %>!</p>
-
+<p>Welcome to PinNinja.net <%= @resource.first_name %> <%=  @resource.last_name %> / <%=  @resource.username %>!</p>
+<br><br>
 <p>You can confirm your account email through the link below:</p>
-
+<br><br>
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
