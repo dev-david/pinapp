@@ -3,7 +3,7 @@
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
   
-  <%= f.input :user_name %>
+  <%= f.input :username %>
   <%= f.input :first_name %>
   <%= f.input :last_name %>
   <%= f.input :email %>
