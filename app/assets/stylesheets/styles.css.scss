@@ -99,6 +99,7 @@ body {
   font-weight: 200;
   line-height: 30px;
   color: inherit;
+  overflow: auto;
   background-color: #7492af;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -232,6 +233,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.carousel-caption h1, p {
+	/*border: solid 1px red;*/
+	margin-left: 27px;
+}
 .carousel.carousel-fade .item {
   -webkit-transition: opacity 2s ease-in-out;
   -moz-transition: opacity 2s ease-in-out;
