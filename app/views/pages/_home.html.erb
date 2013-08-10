@@ -1,19 +1,20 @@
 <% unless user_signed_in? %>
-<div>
+<div class="david_bar">
+    <div class="container">
     <div class="david_left">
         <%= render "pages/carousel" %>
     </div>
     <div class="david_right">
         <div class="center david_unit">
-        	<h1>#PinNinja</h1>
-        	<p class="david_blue">Post and share pictures of the things you like</p>
-        	<p><%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-large submit_button" %></p>
+            <h1>#PinNinja</h1>
+            <p class="david_blue">Post and share pictures of the things you like</p>
+            <p><%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-large submit_button" %></p>
         </div> <!-- end david unit -->
-        <div class="center">
-        <p class="david_caption">Pin for me, pin for you. Pins for me, pins for you...<br><br> Oh yeah and..<br><br>
-            Hadouken!!!
-        </p>
+        <div class="center david_caption">
+            <p>Pin for me, pin for you. Pins for me, pins for you...<br><br> Oh yeah and..<br><br>
+            Hadouken!!!</p>
         </div>
+    </div>
     </div>    
 </div>
 <% end %>

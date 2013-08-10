@@ -66,7 +66,7 @@ Pinapp::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   #In production, :host should be set to the actual host of your application.
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'http://fathomless-everglades-6981.herokuapp.com/' }
 
   config.paperclip_defaults = {
     :storage => :s3,
@@ -76,5 +76,20 @@ Pinapp::Application.configure do
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
+
+  # For sending emails with heroku
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "mail.google.com",
+    authentication: "plain",
+    # enable_starttls_auto: false,
+    :enable_starttls_auto => true,
+    # :openssl_verify_mode  => 'none',
+    user_name: ENV['SMTP_USERNAME'],
+    password: ENV['SMTP_PASSWORD']
+  }
+  config.action_mailer.raise_delivery_errors = true
 
 end
