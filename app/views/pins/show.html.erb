@@ -1,12 +1,15 @@
 <div class="row">
 	<div class="span6 offset3">
 		<div class="well" style="background: linear-gradient(#ffffff, #E2F1FF);">
-			<%= image_tag @pin.image %>
-			<p>
-			  <%= @pin.description %>
+			<%= image_tag @pin.image %> <br>
+			<p class="description">
+				<%= @pin.description %>
 			</p>
 			<p>
-			  <%= @pin.user.username %>
+				<strong>
+			 		 Posted by <%= link_to @pin.user.username, @pin.user %> <br>
+					 <%= time_ago_in_words(@pin.created_at) %> ago.
+			  </strong>
 			</p>
 			<% if current_user == @pin.user %>
 				<%= link_to 'Edit', edit_pin_path(@pin) %> |
